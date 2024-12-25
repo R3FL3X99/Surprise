@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.heart {
+  position: fixed;
+  top: -2em;
+  font-size: 2em;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #ff758c;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #ffe5ec;
+}
+
+#message {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+}
